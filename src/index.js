@@ -3,9 +3,10 @@
  * @author curry.liang
  * 注：本人尝试英文翻译，以下注释有问题请谅解
  */
-import FileSaver from 'file-saver';
-import { utils, write, read } from 'xlsx';
-import _ from 'lodash';
+const FileSaver = require('file-saver');
+const xlsx = require('xlsx');
+const { utils, write, read } =  xlsx;
+const _ = require('underscore');
 /**
  * @description the two main methods of xlsx
  * make it to use next

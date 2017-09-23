@@ -1,6 +1,6 @@
 {
   "name": "xian_xlsx",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "import and export about xlsx",
   "main": "src/index.js",
   "scripts": {
