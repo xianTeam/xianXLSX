@@ -6,8 +6,7 @@
   "scripts": {
     "precommit": "eslint ./src/ ./test/;",
     "clear": "rm -rf build && mkdir build;",
-    "start": "npm run clear && NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 5000 --inline --hot --devtool eval --progress --colors",
-    "publishpatch": "git add --all; git commit -m 'c'; npm version patch; git push origin HEAD:master; npm publish --registry='https://registry.npmjs.org'; npm version;"
+    "start": "npm run clear && NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 5000 --inline --hot --devtool eval --progress --colors"
   },
   "peerDependencies": {
     "file-saver": "^1.3.3",
