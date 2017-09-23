@@ -16,7 +16,7 @@ const { json_to_sheet, table_to_sheet } = utils;
  * @description json to sheet
  * make json arrays to sheet of xlsx, it's usually to use when your data from your databases;
  */
-const jsonToSheet = (datas, options) => {
+export const jsonToSheet = (datas, options) => {
     const opts = Object.assign({}, options, {style: 'json'});
     tSheet(datas, opts);
 };
@@ -25,7 +25,7 @@ const jsonToSheet = (datas, options) => {
  * @description xlsx to json
  * import a xlsx file and make it to json arrays and you can use it to insert into databases
  */
-const sheetToJson = (file) => {
+export const sheetToJson = (file) => {
     return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.readAsBinaryString(file);
@@ -94,4 +94,4 @@ const tSheet = (datas, opts) => {
     FileSaver.saveAs(wsblob, fileName);
 };
 
-export { jsonToSheet, sheetToJson };
+export default { jsonToSheet, sheetToJson };
